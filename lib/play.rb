@@ -36,3 +36,21 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+     i = 0 
+      while i < 9 do 
+       i += 1 
+       turn(board)
+     end
+end
+
+   def turn_count(array)
+     num_turns = 0 
+      array.each do |i|
+       if i == "X" || i == "O"
+         num_turns += 1
+       end
+   end
+   
+    num_turns
+    end
